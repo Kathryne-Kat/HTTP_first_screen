@@ -218,6 +218,12 @@ address {
   justify-content: start;
 }
 .fleg-img {
+  background: rgb(42, 175, 186);
+  background: linear-gradient(
+    94deg,
+    rgba(42, 175, 186, 1) 90%,
+    rgba(33, 30, 24, 1) 93%
+  );
   border-radius: 3px;
   width: 160px;
   margin: 8px;
@@ -238,7 +244,7 @@ address {
     font-size: 24px;
   }
   .fleg-img {
-    width: 80px;
+    width: 85px;
   }
 }
 .hero-text-flex {
