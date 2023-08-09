@@ -20,12 +20,6 @@ html {
 
 @media screen and (max-width: 870px) {
   body {
-    background-image: url(../img/el3.png);
-    background-position: center;
-  }
-}
-@media screen and (max-width: 480px) {
-  body {
     background-image: url(../img/el3.png), url(../img/c-ug.png),
       url(../img/c-l.png);
     background-position: center, top 0 left 0, top 50% right 0;
@@ -90,11 +84,19 @@ address {
   margin-top: 70px;
   margin-bottom: 10px;
 }
-
+.page-header-s {
+  display: none;
+}
 @media screen and (max-width: 870px) {
   .container.header {
     margin-top: 0;
     justify-content: center;
+  }
+  .page-header {
+    display: none;
+  }
+  .page-header-s {
+    display: block;
   }
 }
 
@@ -149,14 +151,22 @@ address {
 @media screen and (max-width: 870px) {
   .hero-img {
     margin-left: 0px;
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
+  }
+  .hero-img-bg {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
   .clok {
     width: 21px;
     height: 21px;
+  }
+  .hero-img {
+    display: none;
   }
   .hero-img-small {
     margin: 0 auto;
@@ -177,7 +187,6 @@ address {
     object-fit: contain;
   }
 }
-
 .hero-title {
   font-size: 60px;
   font-weight: 700;
@@ -210,6 +219,7 @@ address {
 @media screen and (max-width: 480px) {
   .hero-title {
     font-size: 36px;
+    margin-top: 0;
   }
 }
 .hero-title-flex {
@@ -329,7 +339,7 @@ address {
   .btn-hero {
     display: block;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width: 280px;
     height: 60px;
     font-size: 17px;
